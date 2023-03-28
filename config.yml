@@ -95,7 +95,7 @@ params:
   author: CarlJin
   # author: ["Me", "You"] # multiple authors
 
-  defaultTheme: auto  # defaultTheme: light or  dark
+  defaultTheme: dark  # defaultTheme: light or  dark
   disableThemeToggle: false
   DateFormat: "2023-01-02"
   ShowShareButtons: true
@@ -216,4 +216,3 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
-        

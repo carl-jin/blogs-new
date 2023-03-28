@@ -1,0 +1,24 @@
+{
+  "name": "blogs-new",
+  "version": "1.0.0",
+  "description": "```shell $ hugo server -D $ hugo new posts/name.md $ hugo --gc --minify",
+  "main": "index.js",
+  "scripts": {
+    "serve": "hugo server -D",
+    "build": "hugo --gc --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carl-jin/blogs-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carl-jin/blogs-new/issues"
+  },
+  "homepage": "https://github.com/carl-jin/blogs-new#readme",
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  }
+}

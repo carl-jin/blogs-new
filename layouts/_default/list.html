@@ -2,6 +2,37 @@
 
 {{- if (and .Site.Params.profileMode.enabled .IsHome) }}
 {{- partial "index_profile.html" . }}
+{{ range ( where .Site.RegularPages "Type" "posts" | first 8 ) }}
+<article class="post-entry">
+  <div class="post-info">
+    <header class="entry-header">
+      <h2>
+        {{- .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <section class="entry-content">
+      <p>
+        {{- if .Description }}
+        {{ .Description }}
+        {{- end }}
+        <!-- {{ .Summary | plainify | htmlUnescape }} -->
+        {{ if .Truncated }}...{{ end }}
+      </p>
+    </section>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+  </div>
+  {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{end}}
 {{- else }} {{/* if not profileMode */}}
 
 {{- if not .IsHome | and .Title }}
