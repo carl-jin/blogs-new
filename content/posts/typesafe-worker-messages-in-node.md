@@ -1,5 +1,5 @@
 ---
-title: "让 worker_threads 之间的通讯支持 worker_threads"
+title: "让 worker_threads 之间的通讯支持 typescript"
 date: 2023-04-03T09:46:16-04:00
 lastmod: 2023-04-03T09:46:16-04:00
 author: ["CarlJin"]
