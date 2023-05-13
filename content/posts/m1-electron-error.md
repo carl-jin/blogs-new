@@ -45,8 +45,8 @@ sudo spctl --master-disable
 
 在终端中输入
 
-```shell
 # 请替换掉软件对应的地址
+```shell
 sudo xattr -rd com.apple.quarantine /Applications/myapp.app
 ```
 
