@@ -1,0 +1,53 @@
+---
+title: "M1芯片Mac xxx.app 已损坏，无法打开，你应该将它移到废纸篓/打不开等解决方法"
+date: 2023-05-13T16:37:33-04:00
+lastmod: 2023-05-13T16:37:33-04:00
+author: ["CarlJin"]
+keywords:
+  -
+categories: # 没有分类界面可以不填写
+  -
+tags: # 标签
+  -
+description: "M1芯片Mac xxx.app 已损坏，无法打开，你应该将它移到废纸篓/打不开等解决方法"
+weight:
+slug: ""
+draft: false # 是否为草稿
+comments: true # 本页面是否显示评论
+reward: false # 打赏
+mermaid: true #是否开启mermaid
+showToc: true # 显示目录
+TocOpen: true # 自动展开目录
+hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
+disableShare: true # 底部不显示分享栏
+showbreadcrumbs: true #顶部显示路径
+cover:
+  image: "" #图片路径例如：posts/tech/123/123.png
+  zoom: # 图片大小，例如填写 50% 表示原图像的一半大小
+  caption: "" #图片底部描述
+  alt: ""
+  relative: false
+---
+
+# 开启【任何来源】选项
+
+打开你的终端
+
+输入
+
+```shell
+sudo spctl --master-disable
+```
+
+然后输入你电脑密码
+
+# 绕过公正
+
+在终端中输入
+
+```shell
+# 请替换掉软件对应的地址
+sudo xattr -rd com.apple.quarantine /Applications/myapp.app
+```
+
+然后输入你电脑密码
