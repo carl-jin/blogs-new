@@ -97,9 +97,9 @@ for (let fileName of files) {
   },
   "typesVersions": {
     "*": {
-      "./A": ["./dist/A.d.ts"],
-      "./B": ["./dist/B.d.ts"],
-      "./C": ["./dist/C.d.ts"]
+      "A": ["./dist/A.d.ts"],
+      "B": ["./dist/B.d.ts"],
+      "C": ["./dist/C.d.ts"]
     }
   },
   "files": ["dist"],
