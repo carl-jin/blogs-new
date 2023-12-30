@@ -1,7 +1,7 @@
 ---
 title: "I18next 在 React 如何使用 Typescript 编写？"
-date: 2023-12-30T14:43:08-05:00
-lastmod: 2023-12-30T14:43:08-05:00
+date: 2023-12-29T14:43:08-05:00
+lastmod: 2023-12-29T14:43:08-05:00
 author: ["CarlJin"]
 keywords:
   -
