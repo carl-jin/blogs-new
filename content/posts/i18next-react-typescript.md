@@ -30,7 +30,9 @@ cover:
 ---
 
 > react^18.2.0
+> 
 > i18next^23.7.12
+> 
 > react-i18next^14.0.0
 
 # 安装依赖
