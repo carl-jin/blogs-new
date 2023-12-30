@@ -1,15 +1,9 @@
 ---
-title: "React useImperativeHandle 如何用 typescript 编写"
-date: 2023-12-30T14:43:08-05:00
-lastmod: 2023-12-30T14:43:08-05:00
+title: "React useImperativeHandle 如何用 typescript 编写？"
+date: 2023-12-29T08:43:08-05:00
+lastmod: 2023-12-29T08:43:08-05:00
 author: ["CarlJin"]
-keywords: 
-- 
-categories: # 没有分类界面可以不填写
-- 
-tags: # 标签
-- 
-description: ""React useImperativeHandle 都用过，但是如何当它能正确的用 typescript 编写？React 官方文档上并没有做说明。让我们来看个例子"
+description: "React useImperativeHandle 都用过，但是如何当它能正确的用 typescript 编写？React 官方文档上并没有做说明。让我们来看个例子"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -28,6 +22,8 @@ cover:
     alt: ""
     relative: false
 ---
+
+> react^18.2.0
 
 # 例子
 
