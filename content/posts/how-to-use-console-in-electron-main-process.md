@@ -30,17 +30,22 @@ cover:
 ---
 
 ```typescript
+import { inspect } from 'util';
+
 //  在 Main 代码中编写一个 log 方法
 export function log(...data) {
   if (!mainWindow) return;
+  let dataStr = data.toString();
+  try {
+    dataStr = JSON.stringify(inspect(data));
+  } catch (e) {}
+
   mainWindow.webContents.executeJavaScript(
     `  try {
-          console.log('%cFROM MAIN', 'color: #800', JSON.parse(${JSON.stringify(
-            data
-          )}));
+          console.log('%cFROM MAIN', 'color: #800', JSON.parse(${dataStr}));
         } catch (e) {
-          console.log('%cFROM MAIN', 'color: #800', ${JSON.stringify(data)});
-        }`
+          console.log('%cFROM MAIN', 'color: #800', ${dataStr});
+        }`,
   );
 }
 ```
