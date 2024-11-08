@@ -9,7 +9,7 @@ categories: # 没有分类界面可以不填写
 - 
 tags: # 标签
 - 
-description: Chrome 插件 chrome.offscreen 中第一次执行 SpeechSynthesisUtterance 朗读文字不工作，自由第二次执行时才生效问题记录
+description: Chrome 插件 chrome.offscreen 中第一次执行 SpeechSynthesisUtterance 朗读文字不工作，只有第二次执行时才生效问题记录
 weight:
 slug: ""
 draft: false # 是否为草稿

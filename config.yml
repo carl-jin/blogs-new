@@ -149,7 +149,7 @@ markup:
   _merge: deep
   highlight:
     noClasses: false
-    lineNos: true
+    lineNos: false
     style: monokai
     codeFences: true
     guessSyntax: true
