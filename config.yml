@@ -23,7 +23,7 @@ enableEmoji: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 hasCJKLanguage: true
-paginate: 15
+pagination.pagerSize: 15
 summaryLength: 140
 
 # URL Management

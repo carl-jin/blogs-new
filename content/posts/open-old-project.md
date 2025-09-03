@@ -4,11 +4,7 @@ date: 2025-01-06T21:57:12-05:00
 lastmod: 2025-01-06T21:57:12-05:00
 author: ["CarlJin"]
 keywords: 
-- 
-categories: 打开老项目报错记录，新电脑是 M1 芯片，打开之前的 node 10.16.3 项目
-- 
 tags: # 标签
-- 
 description: ""
 weight:
 slug: ""
